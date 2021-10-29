@@ -62,6 +62,51 @@
         
         @media screen and (min-width: 800px) and (max-width: 880px) {
             /* Serena */
+            body {
+                background-color: #075564;
+                transition: background-color 2s;
+                animation: bgAnimation 3s infinite alternate ease-in-out;
+            }
+            
+            #div3 {
+                display: block;
+                position: absolute;
+                background-image: linear-gradient(45deg, #B6F213, #112ECE);
+                width: 40vw;
+                height:40vw;
+                top:calc(50% - 20vw);
+                left: calc(50% - 20vw);
+                animation: animation 5s infinite alternate ease-in-out;
+                transition: background-color 1.5s, width 1.5s, height 1.5s, opacity 2s, border-radius 2s;
+            }
+            
+            @keyframes animation {
+                0% {
+                    transform: scale(80%,80%);
+                    opacity: .6;
+                     border-radius: 50%;
+                    filter: blur(17px);
+
+
+                }
+   
+                100% {
+                    opacity: 1;
+                    border-radius: 100%;
+                    transform: scale(100%,100%);
+                    filter: blur(0);
+                }
+            }
+            
+            @keyframes bgAnimation {
+                0%{
+                    background-color: #040424;
+                }
+                
+                100% {
+                    background-color: #B6F0CF;
+                }
+            }
         }
         
         @media screen and (min-width: 720px) and (max-width: 800px) {
