@@ -20,4 +20,4 @@ Graphic Design for the Web<Br>
 GRAPH-3237-01 (29750), Fall 2021<Br>
 Rhode Island School of Design<Br>
 Instructor: Minkyoung Kim, mkim37@risd.edu<Br>
-[Class Website](https://mkim.netlify.com/gdfwf21)]
+[Class Website](https://mkim.netlify.com/gdfwf21)
