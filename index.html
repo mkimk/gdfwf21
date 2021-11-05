@@ -50,7 +50,94 @@
 
         @media screen and (min-width: 1040px) and (max-width: 1120px) {
             /* Samaaya */
-        }
+
+            body{
+                background-color: orange;
+                animation: shift 2s infinite;
+                }
+
+             #div9 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background-color: black;
+                top: 45%;
+                left: 600px;
+                z-index: 0;
+                animation: flip 2s infinite;
+            }
+
+             #div10 {
+                display: block;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                top: 30%;
+                left: 200px;
+                z-index: 0;
+                animation: flip 2s infinite;
+            }
+
+                @keyframes flip{
+                  0% {transform:rotate(0deg);}
+                  10% {transform:rotate(36deg);}
+                  20% {transform:rotate(72deg);}
+                  30% {transform:rotate(108deg);}
+                  40% {transform:rotate(144deg);}
+                  50% {transform:rotate(180deg);}
+                  60% {transform:rotate(216deg);}
+                  70% {transform:rotate(252deg);}
+                  80% {transform:rotate(288deg);}
+                  90% {transform:rotate(334deg);}
+                  100% {transform:rotate(360deg);}
+}
+                @keyframes shift{
+                   0% {
+                    background-color: orange;
+                }
+
+                10%{
+                    background-color: coral;
+                }
+
+                20%{
+                   background-color: hotpink;
+                }
+                30%{
+                    background-color: orange;
+                }
+                40%{
+                    background-color: coral;
+                }
+
+                50%{
+                    background-color: hotpink;
+                }
+
+                60%{
+                    background-color: orange;
+                }
+
+                70%{
+                    background-color: coral;
+                }
+
+                80%{
+                    background-color: hotpink;
+                }
+                90%{
+                    background-color: orange;
+                }
+                100%{
+                    background-color: coral;
+                }
+                
+                }
+
+}
+    }
         
         @media screen and (min-width: 960px) and (max-width: 1040px) {
             /* Carrie */
