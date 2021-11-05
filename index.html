@@ -45,7 +45,63 @@
         }
 
         @media screen and (min-width: 1120px) and (max-width: 1200px) {
-            /* Jingyu */
+         /* Jingyu */
+         body{
+            background-color: green;
+        }
+        #div13 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background-color: black;
+                top: 45%;
+                left: 600px;
+                z-index: 0;
+                animation: jyu_black 1.5s infinite;
+            }
+
+             #div14 {
+                display: block;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                top: 30%;
+                left: 200px;
+                z-index: 0;
+                animation: jyu_white 1.5s infinite;
+            }
+
+                @keyframes jyu_black{
+                  100% {transform:rotate(0deg);transform: translateY(10px, 0px);}
+                  90% {transform:rotate(36deg);}
+                  80% {transform:rotate(72deg);}
+                  70% {transform:rotate(108deg);}
+                  60% {transform:rotate(144deg);}
+                  50% {transform:rotate(180deg);border-radius: 0 0 0 0;}
+                  40% {transform:rotate(216deg);}
+                  30% {transform:rotate(252deg);}
+                  20% {transform:rotate(288deg);}
+                  10% {transform:rotate(334deg);}
+                  0% {transform:rotate(360deg);transform: translateY(200px);transform: translateX(200px);border-radius: 50% 50% 50% 50%;}
+              }
+
+              @keyframes jyu_white{
+                  100% {transform:rotate(0deg);transform: translateX(10px, 0px);}
+                  90% {transform:rotate(36deg);transform: translateX(10px, 0px);}
+                  80% {transform:rotate(72deg);}
+                  70% {transform:rotate(108deg);}
+                  60% {transform:rotate(144deg);}
+                  50% {transform:rotate(180deg);}
+                  40% {transform:rotate(216deg);transform: translateX(10px, 0px);}
+                  30% {transform:rotate(252deg);}
+                  20% {transform:rotate(288deg);}
+                  10% {transform:rotate(334deg);}
+                  0% {transform:rotate(360deg);transform: translateX(200px);}
+              }
+            
+
         }
 
         @media screen and (min-width: 1040px) and (max-width: 1120px) {
