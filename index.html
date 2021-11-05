@@ -50,18 +50,325 @@
 
         @media screen and (min-width: 1040px) and (max-width: 1120px) {
             /* Samaaya */
-        }
+
+            body{
+                background-color: orange;
+                animation: shift 2s infinite;
+                }
+
+             #div11 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background-color: black;
+                top: 45%;
+                left: 600px;
+                z-index: 0;
+                animation: flip 2s infinite;
+            }
+
+             #div12 {
+                display: block;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                top: 30%;
+                left: 200px;
+                z-index: 0;
+                animation: flip 2s infinite;
+            }
+
+                @keyframes flip{
+                  0% {transform:rotate(0deg);}
+                  10% {transform:rotate(36deg);}
+                  20% {transform:rotate(72deg);}
+                  30% {transform:rotate(108deg);}
+                  40% {transform:rotate(144deg);}
+                  50% {transform:rotate(180deg);}
+                  60% {transform:rotate(216deg);}
+                  70% {transform:rotate(252deg);}
+                  80% {transform:rotate(288deg);}
+                  90% {transform:rotate(334deg);}
+                  100% {transform:rotate(360deg);}
+}
+                @keyframes shift{
+                   0% {
+                    background-color: orange;
+                }
+
+                10%{
+                    background-color: coral;
+                }
+
+                20%{
+                   background-color: hotpink;
+                }
+                30%{
+                    background-color: orange;
+                }
+                40%{
+                    background-color: coral;
+                }
+
+                50%{
+                    background-color: hotpink;
+                }
+
+                60%{
+                    background-color: orange;
+                }
+
+                70%{
+                    background-color: coral;
+                }
+
+                80%{
+                    background-color: hotpink;
+                }
+                90%{
+                    background-color: orange;
+                }
+                100%{
+                    background-color: coral;
+                }
+                
+                }
+
+}
+    }
         
         @media screen and (min-width: 960px) and (max-width: 1040px) {
             /* Carrie */
+            body {
+                background-color: white;
+                transition:  background-color 10s;
+                animation: backgroundAnimation 3s ease-in-out forwards;
+            }
+
+            @keyframes backgroundAnimation {
+                0% {
+                    background-color: #B6F0CF;
+                }
+
+                100% {
+                    background-image: linear-gradient(to right, white, darkgray, black);
+                }
+            }
+
+            #div9 {
+                display: inline-block;
+                margin: -10px;
+                position: absolute;
+                width: 300px;
+                height: 960px;
+                background-color: darkgray;
+                transform: translateY(690px);
+                animation: rect 5s ease-in forwards;
+                z-index: 0;
+            }
+
+            #div10 {
+                display: inline-block;
+                margin: -10px;
+                position: absolute;
+                width: 5px;
+                height: 900px;
+                background-color: white;
+                transform: translate(800px,450px);
+                animation: rect2 5s ease-in forwards;
+                z-index: 2;
+            }
+    
+            #div7 {
+                display: block;
+                position: absolute;
+                top: 25%;
+                left: 55%;
+                padding: 5%;
+                width: 20vw;
+                height: 20vw;
+                background-color: #5BAF;
+                border-radius: 50%;
+                animation: cir1 3s ease-in forwards;
+                z-index: 1;
+            }
+
+            #div8 {
+                display: block;
+                position: absolute;
+                top: 25%;
+                left: 15%;
+                padding: 5%;
+                width: 20vw;
+                height: 20vw;
+                background-color: #B6F0CF;
+                border-radius: 50%; 
+                animation: cir2 3s ease-in forwards;
+                z-index: 1;
+            }
+
+            @keyframes cir1 {
+                0% { 
+                    width: 20vw;
+                    height: 20vw;
+                    background-color: #5BAF;
+                }
+                50% { 
+                    width: 10vw;
+                    height: 10vw;
+                    background-color: white;
+                    transform: translate(30px, 25px);
+                }
+                100% { 
+                    width: 1000vw;
+                    height: 1000px;
+                    background-color: black;
+                }   
+            }
+
+            @keyframes cir2 {
+                0% { 
+                    width: 20vw;
+                    height: 20vw;
+                    background-color: #B6F0CF;
+                    border-radius: 50%;
+                }
+                100% { 
+                    transform: scale(0.5);
+                    background-color: black;
+                    border-radius: 90%;
+                }   
+            }
+
+            @keyframes rect {
+                50% { 
+                    transform: translateY(-680px);
+                }
+                100% { 
+                    transform: translateY(0px);
+                }   
+            }
+
+            @keyframes rect2 {
+                0% { 
+                    transform: translate(800px,0px);
+                    opacity: 0%;
+                }
+                100% { 
+                    transform: translate(800px,450px);
+                    opacity: 100%;
+                }   
+            }
+
         }
 
         @media screen and (min-width: 880px) and (max-width: 960px) {
             /* Justin */
+
+            body {
+            background-color: #B6F0CF;
+            transition: background-color 2s;
+            animation: bgAnim 5 infinite ease-in-out;
+            }
+
+            @keyframes bgAnim {
+                0%{
+                    background-color: #B6F0CF;
+                }
+                
+                100% {
+                    background-color: #FFF;
+                }
+            }
+            
+
+            #div5{
+                display: block;
+                position: absolute;
+                top: 25%;
+                left: 55%;
+                padding: 5%;
+                width: 20vw;
+                height: 20vw;
+                background-color: #000;
+                border-radius: 50%;
+                animation: circleAnim 3s infinite reverse ease-in-out;
+            }
+
+            #div6{
+                display: block;
+                position: absolute;
+                top: 25%;
+                left: 15%;
+                padding: 5%;
+                width: 20vw;
+                height: 20vw;
+                background-color: #000;
+                border-radius: 50%; 
+                animation: circleAnim 3s  infinite ease-in-out;
+            }
+
+             @keyframes circleAnim {
+                0%{
+                    background-color: #B6F0CF;
+                }
+                
+                100% {
+                    background-color: #5BAF;
+                }
+            }
         }
+
         
         @media screen and (min-width: 800px) and (max-width: 880px) {
             /* Serena */
+            body {
+                background-color: #075564;
+                transition: background-color 2s;
+                animation: bgAnimation 3s infinite alternate ease-in-out;
+            }
+            
+            #div4 {
+                display: block;
+                position: absolute;
+                background-image: linear-gradient(45deg, #B6F213, #112ECE);
+                width: 40vw;
+                height:40vw;
+                top:calc(50% - 20vw);
+                left: calc(50% - 20vw);
+                animation: animation 5s infinite alternate ease-in-out;
+                transition: background-color 1.5s, width 1.5s, height 1.5s, opacity 2s, border-radius 2s;
+            }
+            
+            @keyframes animation {
+                0% {
+                    transform: scale(80%,80%);
+                    opacity: .6;
+                     border-radius: 50%;
+                    filter: blur(17px);
+
+
+                }
+   
+                100% {
+                    opacity: 1;
+                    border-radius: 100%;
+                    transform: scale(100%,100%);
+                    filter: blur(0);
+                }
+            }
+            
+            @keyframes bgAnimation {
+                0%{
+                    background-color: #040424;
+                }
+                
+                100% {
+                    background-color: #B6F0CF;
+                }
+            }
         }
         
         @media screen and (min-width: 720px) and (max-width: 800px) {
