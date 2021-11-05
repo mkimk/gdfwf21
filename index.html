@@ -58,7 +58,61 @@
 
         @media screen and (min-width: 880px) and (max-width: 960px) {
             /* Justin */
+
+            body {
+            background-color: #B6F0CF;
+            transition: background-color 2s;
+            animation: bgAnim 5 infinite ease-in-out;
+            }
+
+            @keyframes bgAnim {
+                0%{
+                    background-color: #B6F0CF;
+                }
+                
+                100% {
+                    background-color: #FFF;
+                }
+            }
+            
+
+            #div5{
+                display: block;
+                position: absolute;
+                top: 25%;
+                left: 55%;
+                padding: 5%;
+                width: 20vw;
+                height: 20vw;
+                background-color: #000;
+                border-radius: 50%;
+                animation: circleAnim 3s infinite reverse ease-in-out;
+            }
+
+            #div6{
+                display: block;
+                position: absolute;
+                top: 25%;
+                left: 15%;
+                padding: 5%;
+                width: 20vw;
+                height: 20vw;
+                background-color: #000;
+                border-radius: 50%; 
+                animation: circleAnim 3s  infinite ease-in-out;
+            }
+
+             @keyframes circleAnim {
+                0%{
+                    background-color: #B6F0CF;
+                }
+                
+                100% {
+                    background-color: #5BAF;
+                }
+            }
         }
+
         
         @media screen and (min-width: 800px) and (max-width: 880px) {
             /* Serena */
