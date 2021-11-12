@@ -344,10 +344,10 @@
                 display: block;
                 position: absolute;
                 top: 25%;
-                left: 55%;
+                right: 0%;
                 padding: 5%;
-                width: 20vw;
-                height: 20vw;
+                width: 40vw;
+                height: 40vw;
                 background-color: #000;
                 border-radius: 50%;
                 animation: circleAnim 3s infinite reverse ease-in-out;
@@ -357,20 +357,35 @@
                 display: block;
                 position: absolute;
                 top: 25%;
-                left: 15%;
+                left: 0%;
                 padding: 5%;
-                width: 20vw;
-                height: 20vw;
+                width: 40vw;
+                height: 40vw;
                 background-color: #000;
                 border-radius: 50%; 
-                animation: circleAnim 3s  infinite ease-in-out;
+                animation: circleAnim2 3s  infinite ease-in-out;
             }
 
              @keyframes circleAnim {
                 0%{
                     background-color: #B6F0CF;
                 }
-                
+            50% {
+                    background-color: #5BAF;
+            }
+                100% {
+                    background-color: #B6F0CF;
+                }
+            }
+        }
+
+        @keyframes circleAnim2 {
+                0%{
+                    background-color: #5BAF;
+                }
+            50% {
+                    background-color: #B6F0CF;
+            }
                 100% {
                     background-color: #5BAF;
                 }
