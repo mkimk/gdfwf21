@@ -38,6 +38,91 @@
         
         @media screen and (min-width: 1280px) and (max-width: 1360px) {
             /* Avery */   
+            body{
+            background-color: darkslategrey;
+         }
+         #div16 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background-color: mediumpurple;
+                top: 30%;
+                left: 20%;
+                z-index: 0;
+                transform: rotate(45deg);
+                animation: avery1 5s infinite;
+            }
+
+             #div15 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-color: black;
+                top: 30%;
+                left: 40%;
+                z-index: 0;
+                animation: avery2 5s infinite;
+            }
+
+             #div17 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background-color: mediumpurple;
+                top: 30%;
+                left: 60%;
+                z-index: 0;
+                transform: rotate(45deg);
+                animation: avery1 5s infinite;
+            }
+            @keyframes avery1{
+ 
+
+                       0% {background-color: darkslategrey;}
+                    25% {background-color: white;}
+                    50% {background-color: darkslategrey;}
+                    75% {background-color: white;}
+                    100% {background-color: darkslategrey;}
+              }
+
+              @keyframes avery2{
+                  0% {transform:rotate(0deg);}
+                  25% {transform:rotate(90deg);}
+                   50% {transform:rotate(180deg);}
+                    75% {transform:rotate(270deg);}
+                     100% {transform:rotate(360deg);}
+
+                     0% {background-color:white;}
+                    25% {background-color: darkslategrey;}
+                    50% {background-color: white;}
+                    75% {background-color: darkslategrey;}
+                    100% {background-color:white;}
+
+
+
+            }
+
+
+              @keyframes avery3{
+                  0% {transform:scale(1.0);}
+                  25% {transform:scale(1.5);}
+                   50% {transform:scale(2.0);}
+                    75% {transform:scale(2.5);}
+                     100% {transform:scale(3.0);}
+
+                     0% {background-color: darkslategray;}
+                    25% {background-color: white;}
+                    50% {background-color: darkslategray;}
+                    75% {background-color:white;}
+                    100% {background-color: darkslategray;}
+
+    
+              
+              }
         }
 
         @media screen and (min-width: 1200px) and (max-width: 1280px) {
