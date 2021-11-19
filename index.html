@@ -38,14 +38,245 @@
         
         @media screen and (min-width: 1280px) and (max-width: 1360px) {
             /* Avery */   
+            body{
+            background-color: darkslategrey;
+         }
+         #div16 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background-color: mediumpurple;
+                top: 30%;
+                left: 20%;
+                z-index: 0;
+                transform: rotate(45deg);
+                animation: avery1 5s infinite;
+            }
+
+             #div15 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-color: black;
+                top: 30%;
+                left: 40%;
+                z-index: 0;
+                animation: avery2 5s infinite;
+            }
+
+             #div17 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background-color: mediumpurple;
+                top: 30%;
+                left: 60%;
+                z-index: 0;
+                transform: rotate(45deg);
+                animation: avery1 5s infinite;
+            }
+            @keyframes avery1{
+ 
+
+                       0% {background-color: darkslategrey;}
+                    25% {background-color: white;}
+                    50% {background-color: darkslategrey;}
+                    75% {background-color: white;}
+                    100% {background-color: darkslategrey;}
+              }
+
+              @keyframes avery2{
+                  0% {transform:rotate(0deg);}
+                  25% {transform:rotate(90deg);}
+                   50% {transform:rotate(180deg);}
+                    75% {transform:rotate(270deg);}
+                     100% {transform:rotate(360deg);}
+
+                     0% {background-color:white;}
+                    25% {background-color: darkslategrey;}
+                    50% {background-color: white;}
+                    75% {background-color: darkslategrey;}
+                    100% {background-color:white;}
+
+
+
+            }
+
+
+              @keyframes avery3{
+                  0% {transform:scale(1.0);}
+                  25% {transform:scale(1.5);}
+                   50% {transform:scale(2.0);}
+                    75% {transform:scale(2.5);}
+                     100% {transform:scale(3.0);}
+
+                     0% {background-color: darkslategray;}
+                    25% {background-color: white;}
+                    50% {background-color: darkslategray;}
+                    75% {background-color:white;}
+                    100% {background-color: darkslategray;}
+
+    
+              
+              }
         }
 
         @media screen and (min-width: 1200px) and (max-width: 1280px) {
             /* Jack */
+         body{
+            background-color: darkslategrey;
+         }
+             #div15 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-color: black;
+                top: 45%;
+                left: 600px;
+                z-index: 0;
+                animation: jack1 2.5s infinite;
+            }
+
+             #div16 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background-color: mediumpurple;
+                top: 30%;
+                left: 200px;
+                z-index: 0;
+                animation: jack2 5s infinite;
+
+            }
+
+             #div17 {
+                display: block;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: lightskyblue;
+                top: 20%;
+                left: 900px;
+                z-index: 0;
+                animation: jack3 5s infinite;
+            }
+
+
+             @keyframes jack3{
+                  0% {transform:scale(1.0);}
+                  25% {transform:scale(1.5);}
+                   50% {transform:scale(2);}
+                    75% {transform:scale(2.5);}
+                     100% {transform:scale(3);}
+
+                       0% {background-color: whitesmoke;}
+                    25% {background-color: lightpink;}
+                    50% {background-color: hotpink;}
+                    75% {background-color: red;}
+                    100% {background-color: darkred;}
+
+
+    
+              
+              }
+              @keyframes jack2{
+                  0% {transform:rotate(0deg);}
+                  25% {transform:rotate(90deg);}
+                   50% {transform:rotate(180deg);}
+                    75% {transform:rotate(270deg);}
+                     100% {transform:rotate(360deg);}
+
+                    0% {background-color: lightyellow;}
+                    25% {background-color: mediumpurple;}
+                    50% {background-color: lightyellow;}
+                    75% {background-color: darkorange;}
+                    100% {background-color: red;}
+
+
+
+            }
+
+
+              @keyframes jack1{
+                  0% {transform:scale(1.0);}
+                  25% {transform:scale(1.5);}
+                   50% {transform:scale(2.0);}
+                    75% {transform:scale(2.5);}
+                     100% {transform:scale(3.0);}
+
+    
+              
+              }
+            
+
         }
 
         @media screen and (min-width: 1120px) and (max-width: 1200px) {
-            /* Jingyu */
+         /* Jingyu */
+         body{
+            background-color: green;
+        }
+        #div13 {
+                display: block;
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                background-color: black;
+                top: 45%;
+                left: 600px;
+                z-index: 0;
+                animation: jyu_black 1.5s infinite;
+            }
+
+             #div14 {
+                display: block;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                top: 30%;
+                left: 200px;
+                z-index: 0;
+                animation: jyu_white 1.5s infinite;
+            }
+
+                @keyframes jyu_black{
+                  100% {transform:rotate(0deg);transform: translateY(10px, 0px);}
+                  90% {transform:rotate(36deg);}
+                  80% {transform:rotate(72deg);}
+                  70% {transform:rotate(108deg);}
+                  60% {transform:rotate(144deg);}
+                  50% {transform:rotate(180deg);border-radius: 0 0 0 0;}
+                  40% {transform:rotate(216deg);}
+                  30% {transform:rotate(252deg);}
+                  20% {transform:rotate(288deg);}
+                  10% {transform:rotate(334deg);}
+                  0% {transform:rotate(360deg);transform: translateY(200px);transform: translateX(200px);border-radius: 50% 50% 50% 50%;}
+              }
+
+              @keyframes jyu_white{
+                  100% {transform:rotate(0deg);transform: translateX(10px, 0px);}
+                  90% {transform:rotate(36deg);transform: translateX(10px, 0px);}
+                  80% {transform:rotate(72deg);}
+                  70% {transform:rotate(108deg);}
+                  60% {transform:rotate(144deg);}
+                  50% {transform:rotate(180deg);}
+                  40% {transform:rotate(216deg);transform: translateX(10px, 0px);}
+                  30% {transform:rotate(252deg);}
+                  20% {transform:rotate(288deg);}
+                  10% {transform:rotate(334deg);}
+                  0% {transform:rotate(360deg);transform: translateX(200px);}
+              }
+            
+
         }
 
         @media screen and (min-width: 1040px) and (max-width: 1120px) {
@@ -136,11 +367,14 @@
                 
                 }
 
-}
     }
         
         @media screen and (min-width: 960px) and (max-width: 1040px) {
             /* Carrie */
+            * {
+                overflow: hidden;
+            }
+
             body {
                 background-color: white;
                 transition:  background-color 10s;
@@ -187,8 +421,8 @@
                 top: 25%;
                 left: 55%;
                 padding: 5%;
-                width: 20vw;
-                height: 20vw;
+                width: 40vw;
+                height: 40vw;
                 background-color: #5BAF;
                 border-radius: 50%;
                 animation: cir1 3s ease-in forwards;
@@ -199,10 +433,10 @@
                 display: block;
                 position: absolute;
                 top: 25%;
-                left: 15%;
+                left: 5%;
                 padding: 5%;
-                width: 20vw;
-                height: 20vw;
+                width: 40vw;
+                height: 40vw;
                 background-color: #B6F0CF;
                 border-radius: 50%; 
                 animation: cir2 3s ease-in forwards;
@@ -211,8 +445,8 @@
 
             @keyframes cir1 {
                 0% { 
-                    width: 20vw;
-                    height: 20vw;
+                    width: 40vw;
+                    height: 40vw;
                     background-color: #5BAF;
                 }
                 50% { 
@@ -230,8 +464,8 @@
 
             @keyframes cir2 {
                 0% { 
-                    width: 20vw;
-                    height: 20vw;
+                    width: 40vw;
+                    height: 40vw;
                     background-color: #B6F0CF;
                     border-radius: 50%;
                 }
@@ -288,10 +522,10 @@
                 display: block;
                 position: absolute;
                 top: 25%;
-                left: 55%;
+                right: 0%;
                 padding: 5%;
-                width: 20vw;
-                height: 20vw;
+                width: 40vw;
+                height: 40vw;
                 background-color: #000;
                 border-radius: 50%;
                 animation: circleAnim 3s infinite reverse ease-in-out;
@@ -301,25 +535,39 @@
                 display: block;
                 position: absolute;
                 top: 25%;
-                left: 15%;
+                left: 0%;
                 padding: 5%;
-                width: 20vw;
-                height: 20vw;
+                width: 40vw;
+                height: 40vw;
                 background-color: #000;
                 border-radius: 50%; 
-                animation: circleAnim 3s  infinite ease-in-out;
+                animation: circleAnim2 3s  infinite ease-in-out;
             }
 
              @keyframes circleAnim {
                 0%{
                     background-color: #B6F0CF;
                 }
-                
+            50% {
+                    background-color: #5BAF;
+            }
+                100% {
+                    background-color: #B6F0CF;
+                }
+            }
+        }
+
+        @keyframes circleAnim2 {
+                0%{
+                    background-color: #5BAF;
+                }
+            50% {
+                    background-color: #B6F0CF;
+            }
                 100% {
                     background-color: #5BAF;
                 }
             }
-        }
 
         
         @media screen and (min-width: 800px) and (max-width: 880px) {
