@@ -11,716 +11,1183 @@
     Instructor: Minkyoung Kim; TA: Malvika Agarwal; Class website: https://mkim.netlify.com/gdfwf21/
     -->
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>gdfwf21 — Media Query Relay</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
     <style>
-        
-        @media screen and (min-width: 1600px) and (max-width: 1680px) {
-        	/* Adrian */
+      @media screen and (min-width: 1600px) and (max-width: 1680px) {
+        /* Adrian */
+      }
+
+      @media screen and (min-width: 1520px) and (max-width: 1600px) {
+        /* Harshal */
+      }
+
+      @media screen and (min-width: 1440px) and (max-width: 1520px) {
+        /* Matthew */
+        body {
+          background-color: #d1d1d1;
+          transition: 2.5s;
         }
-        
-        @media screen and (min-width: 1520px) and (max-width: 1600px) {
-            /* Harshal */
+        #div18 {
+          display: block;
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          background-color: #1900ff;
+          top: 5%;
+          left: 50%;
+          z-index: 0;
+          animation: matt1 4s;
+          transition: 1s;
+          border-radius: 50%;
+          animation-timing-function: ease-in;
+
+          animation-fill-mode: forwards;
         }
-        
-        @media screen and (min-width: 1440px) and (max-width: 1520px) {
-            /* Matthew */
+        #div19 {
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-radius: 0;
+          background-color: rgb(2, 255, 2);
+          bottom: 30%;
+          left: 40%;
+          z-index: 0;
+          animation: matt2 4s;
+          transform: rotate(180deg);
+          transition: 1s;
+          animation-timing-function: ease-in;
+
+          animation-fill-mode: forwards;
         }
-        
-        @media screen and (min-width: 1360px) and (max-width: 1440px) {
-            /* Nicole */
+        #div20 {
+          display: block;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background-color: #ff1100;
+          top: 10%;
+          left: 50%;
+          z-index: 0;
+          animation: matt3 4s;
+          transform: rotate(180deg);
+          animation-timing-function: ease-in;
+
+          animation-fill-mode: forwards;
+          transition: 1s;
         }
-        
-        @media screen and (min-width: 1280px) and (max-width: 1360px) {
-            /* Avery */   
-            body{
+        @keyframes matt1 {
+          0% {
             background-color: darkslategrey;
-         }
-         #div16 {
-                display: block;
-                position: absolute;
-                width: 300px;
-                height: 300px;
-                background-color: mediumpurple;
-                top: 30%;
-                left: 20%;
-                z-index: 0;
-                transform: rotate(45deg);
-                animation: avery1 5s infinite;
-            }
-
-             #div15 {
-                display: block;
-                position: absolute;
-                width: 300px;
-                height: 300px;
-                border-radius: 50%;
-                background-color: black;
-                top: 30%;
-                left: 40%;
-                z-index: 0;
-                animation: avery2 5s infinite;
-            }
-
-             #div17 {
-                display: block;
-                position: absolute;
-                width: 300px;
-                height: 300px;
-                background-color: mediumpurple;
-                top: 30%;
-                left: 60%;
-                z-index: 0;
-                transform: rotate(45deg);
-                animation: avery1 5s infinite;
-            }
-            @keyframes avery1{
- 
-
-                       0% {background-color: darkslategrey;}
-                    25% {background-color: white;}
-                    50% {background-color: darkslategrey;}
-                    75% {background-color: white;}
-                    100% {background-color: darkslategrey;}
-              }
-
-              @keyframes avery2{
-                  0% {transform:rotate(0deg);}
-                  25% {transform:rotate(90deg);}
-                   50% {transform:rotate(180deg);}
-                    75% {transform:rotate(270deg);}
-                     100% {transform:rotate(360deg);}
-
-                     0% {background-color:white;}
-                    25% {background-color: darkslategrey;}
-                    50% {background-color: white;}
-                    75% {background-color: darkslategrey;}
-                    100% {background-color:white;}
-
-
-
-            }
-
-
-              @keyframes avery3{
-                  0% {transform:scale(1.0);}
-                  25% {transform:scale(1.5);}
-                   50% {transform:scale(2.0);}
-                    75% {transform:scale(2.5);}
-                     100% {transform:scale(3.0);}
-
-                     0% {background-color: darkslategray;}
-                    25% {background-color: white;}
-                    50% {background-color: darkslategray;}
-                    75% {background-color:white;}
-                    100% {background-color: darkslategray;}
-
-    
-              
-              }
+            width: 150px;
+            height: 150px;
+          }
+          25% {
+            background-color: #1900ff;
+            transform: (translateX(-500px));
+            width: 4px;
+            height: 4px;
+            border-radius: 0;
+            box-shadow: 10px 5px 5px black;
+          }
+          45% {
+            width: 4px;
+            height: 4px;
+            box-shadow: 10px 5px 5px black;
+          }
+          50% {
+            box-shadow: 0px 2px 5px black;
+          }
+          51% {
+            background-color: #1900ff;
+            transform: translateX(-300px);
+            width: 4px;
+            height: 4px;
+            border-radius: 0;
+            box-shadow: 10px 5px 5px black;
+          }
+          60% {
+            position: center;
+            transform: translate(30px, 355px);
+          }
+          65% {
+            position: center;
+            transform: translate(30px, 375px);
+          }
+          75% {
+            position: center;
+            transform: translate(30px, 355px);
+          }
+          100% {
+            position: center;
+            transform: translate(30px, 355px);
+          }
         }
-
-        @media screen and (min-width: 1200px) and (max-width: 1280px) {
-            /* Jack */
-         body{
-            background-color: darkslategrey;
-         }
-             #div15 {
-                display: block;
-                position: absolute;
-                width: 300px;
-                height: 300px;
-                border-radius: 50%;
-                background-color: black;
-                top: 45%;
-                left: 600px;
-                z-index: 0;
-                animation: jack1 2.5s infinite;
-            }
-
-             #div16 {
-                display: block;
-                position: absolute;
-                width: 300px;
-                height: 300px;
-                background-color: mediumpurple;
-                top: 30%;
-                left: 200px;
-                z-index: 0;
-                animation: jack2 5s infinite;
-
-            }
-
-             #div17 {
-                display: block;
-                position: absolute;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background-color: lightskyblue;
-                top: 20%;
-                left: 900px;
-                z-index: 0;
-                animation: jack3 5s infinite;
-            }
-
-
-             @keyframes jack3{
-                  0% {transform:scale(1.0);}
-                  25% {transform:scale(1.5);}
-                   50% {transform:scale(2);}
-                    75% {transform:scale(2.5);}
-                     100% {transform:scale(3);}
-
-                       0% {background-color: whitesmoke;}
-                    25% {background-color: lightpink;}
-                    50% {background-color: hotpink;}
-                    75% {background-color: red;}
-                    100% {background-color: darkred;}
-
-
-    
-              
-              }
-              @keyframes jack2{
-                  0% {transform:rotate(0deg);}
-                  25% {transform:rotate(90deg);}
-                   50% {transform:rotate(180deg);}
-                    75% {transform:rotate(270deg);}
-                     100% {transform:rotate(360deg);}
-
-                    0% {background-color: lightyellow;}
-                    25% {background-color: mediumpurple;}
-                    50% {background-color: lightyellow;}
-                    75% {background-color: darkorange;}
-                    100% {background-color: red;}
-
-
-
-            }
-
-
-              @keyframes jack1{
-                  0% {transform:scale(1.0);}
-                  25% {transform:scale(1.5);}
-                   50% {transform:scale(2.0);}
-                    75% {transform:scale(2.5);}
-                     100% {transform:scale(3.0);}
-
-    
-              
-              }
-            
-
+        @keyframes matt2 {
+          0% {
+            transform: translateX(50px);
+            width: 500px;
+            height: 500px;
+            background-color: rgb(173, 67, 67);
+          }
+          25% {
+            background-color: rgb(173, 67, 67);
+            width: 10px;
+            height: 10px;
+            border-radius: 0;
+            box-shadow: 10px 5px 5px black;
+          }
+          45% {
+            width: 10px;
+            height: 10px;
+            box-shadow: 10px 5px 5px black;
+          }
+          50% {
+            background-color: red;
+            transform: translateX(-300px);
+            width: 4px;
+            height: 4px;
+            border-radius: 0;
+            box-shadow: 10px 5px 5px black;
+          }
+          60% {
+            position: center;
+            transform: translate(100px, -200px);
+          }
+          69% {
+            position: center;
+            transform: translate(100px, -180px);
+          }
+          75% {
+            position: center;
+            transform: translate(100px, -200px);
+          }
+          100% {
+            position: center;
+            transform: translate(100px, -200px);
+          }
         }
+        @keyframes matt3 {
+          0% {
+            transform: translateX(-50px);
+            width: 400px;
+            height: 400px;
+          }
+          25% {
+            background-color: rgb(93, 253, 0);
+            width: 8px;
+            height: 8px;
+            border-radius: 0;
+            box-shadow: 10px 5px 5px black;
+          }
+          45% {
+            width: 8px;
+            height: 8px;
+            box-shadow: 10px 5px 5px black;
+          }
 
-        @media screen and (min-width: 1120px) and (max-width: 1200px) {
-         /* Jingyu */
-         body{
+          50% {
             background-color: green;
+            transform: translateX(-300px);
+            width: 4px;
+            height: 4px;
+            border-radius: 0;
+            box-shadow: 10px 5px 5px black;
+          }
+          60% {
+            position: center;
+            transform: translate(-10px, 315px);
+          }
+          65% {
+            position: center;
+            transform: translate(-10px, 300px);
+          }
+          75% {
+            position: center;
+            transform: translate(-10px, 315px);
+          }
+          100% {
+            position: center;
+            transform: translate(-10px, 315px);
+          }
+        }
+      }
+
+      @media screen and (min-width: 1360px) and (max-width: 1440px) {
+        /* Nicole*/
+        body {
+          background-color: #356bba;
+          transition: 2.5s;
+        }
+        #div16 {
+          display: block;
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          background-color: white;
+          top: 5%;
+          left: 50%;
+          z-index: 0;
+          animation: nicole1 5s infinite;
+          transition: 3s;
+          border-radius: 50%;
+          opacity: 0.5;
+          box-shadow: inset #2c528a 0 0 20px;
+        }
+        #div15 {
+          display: block;
+          position: absolute;
+          width: 500px;
+          height: 500px;
+          border-radius: 0;
+          background-color: #021d46;
+          bottom: 30%;
+          left: 40%;
+          z-index: 0;
+          animation: nicole2 5s infinite;
+          transform: rotate(180deg);
+          transition: 3s;
+          opacity: 0.5;
+          box-shadow: inset #2c528a 0 0 20px;
+        }
+        #div17 {
+          display: block;
+          position: absolute;
+          width: 400px;
+          height: 400px;
+          background-color: #ffffff;
+          top: 10%;
+          left: 50%;
+          z-index: 0;
+          animation: nicole3 5s infinite;
+          transform: rotate(180deg);
+          opacity: 0.5;
+          transition: 3s;
+          box-shadow: inset #2c528a 0 0 20px;
+        }
+        @keyframes nicole1 {
+          0% {
+            background-color: darkslategrey;
+          }
+          100% {
+            background-color: #356bba;
+          }
+          25% {
+            background-color: white;
+          }
+          75% {
+            background-color: #84b2f7;
+          }
+          25% {
+            background-color: white;
+          }
+        }
+        @keyframes nicole2 {
+          0% {
+            transform: translateX(50px);
+          }
+          25% {
+            transform: translateX(70px);
+          }
+          50% {
+            transform: translateX(75px);
+          }
+          75% {
+            transform: translateX(100px);
+          }
+          100% {
+            transform: translateX(150px);
+          }
+          50% {
+            background-color: rgb(173, 67, 67);
+          }
+          75% {
+            background-color: rgb(209, 143, 143);
+          }
+          100% {
+            background-color: rgb(46, 2, 2);
+          }
+          25% {
+            background-color: white;
+          }
+          75% {
+            background-color: rgb(173, 67, 67);
+          }
+        }
+        @keyframes nicole3 {
+          0% {
+            transform: translateX(-50px);
+          }
+          25% {
+            transform: translateX(-70px);
+          }
+          50% {
+            transform: translateX(-75px);
+          }
+          75% {
+            transform: translateX(-100px);
+          }
+          100% {
+            transform: translateX(-150px);
+          }
+          0% {
+            background-color: white;
+          }
+          50% {
+            background-color: #356bba;
+          }
+          75% {
+            background-color: #84b2f7;
+          }
+          100% {
+            background-color: #356bba;
+          }
+          25% {
+            background-color: white;
+          }
+        }
+      }
+
+      @media screen and (min-width: 1280px) and (max-width: 1360px) {
+        /* Avery */
+        body {
+          background-color: darkslategrey;
+        }
+        #div16 {
+          display: block;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: mediumpurple;
+          top: 30%;
+          left: 20%;
+          z-index: 0;
+          transform: rotate(45deg);
+          animation: avery1 5s infinite;
+        }
+
+        #div15 {
+          display: block;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          background-color: black;
+          top: 30%;
+          left: 40%;
+          z-index: 0;
+          animation: avery2 5s infinite;
+        }
+
+        #div17 {
+          display: block;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: mediumpurple;
+          top: 30%;
+          left: 60%;
+          z-index: 0;
+          transform: rotate(45deg);
+          animation: avery1 5s infinite;
+        }
+        @keyframes avery1 {
+          0% {
+            background-color: darkslategrey;
+          }
+          25% {
+            background-color: white;
+          }
+          50% {
+            background-color: darkslategrey;
+          }
+          75% {
+            background-color: white;
+          }
+          100% {
+            background-color: darkslategrey;
+          }
+        }
+
+        @keyframes avery2 {
+          0% {
+            transform: rotate(0deg);
+          }
+          25% {
+            transform: rotate(90deg);
+          }
+          50% {
+            transform: rotate(180deg);
+          }
+          75% {
+            transform: rotate(270deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+
+          0% {
+            background-color: white;
+          }
+          25% {
+            background-color: darkslategrey;
+          }
+          50% {
+            background-color: white;
+          }
+          75% {
+            background-color: darkslategrey;
+          }
+          100% {
+            background-color: white;
+          }
+        }
+
+        @keyframes avery3 {
+          0% {
+            transform: scale(1);
+          }
+          25% {
+            transform: scale(1.5);
+          }
+          50% {
+            transform: scale(2);
+          }
+          75% {
+            transform: scale(2.5);
+          }
+          100% {
+            transform: scale(3);
+          }
+
+          0% {
+            background-color: darkslategray;
+          }
+          25% {
+            background-color: white;
+          }
+          50% {
+            background-color: darkslategray;
+          }
+          75% {
+            background-color: white;
+          }
+          100% {
+            background-color: darkslategray;
+          }
+        }
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1280px) {
+        /* Jack */
+        body {
+          background-color: darkslategrey;
+        }
+        #div15 {
+          display: block;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          background-color: black;
+          top: 45%;
+          left: 600px;
+          z-index: 0;
+          animation: jack1 2.5s infinite;
+        }
+
+        #div16 {
+          display: block;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: mediumpurple;
+          top: 30%;
+          left: 200px;
+          z-index: 0;
+          animation: jack2 5s infinite;
+        }
+
+        #div17 {
+          display: block;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: lightskyblue;
+          top: 20%;
+          left: 900px;
+          z-index: 0;
+          animation: jack3 5s infinite;
+        }
+
+        @keyframes jack3 {
+          0% {
+            transform: scale(1);
+          }
+          25% {
+            transform: scale(1.5);
+          }
+          50% {
+            transform: scale(2);
+          }
+          75% {
+            transform: scale(2.5);
+          }
+          100% {
+            transform: scale(3);
+          }
+
+          0% {
+            background-color: whitesmoke;
+          }
+          25% {
+            background-color: lightpink;
+          }
+          50% {
+            background-color: hotpink;
+          }
+          75% {
+            background-color: red;
+          }
+          100% {
+            background-color: darkred;
+          }
+        }
+        @keyframes jack2 {
+          0% {
+            transform: rotate(0deg);
+          }
+          25% {
+            transform: rotate(90deg);
+          }
+          50% {
+            transform: rotate(180deg);
+          }
+          75% {
+            transform: rotate(270deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+
+          0% {
+            background-color: lightyellow;
+          }
+          25% {
+            background-color: mediumpurple;
+          }
+          50% {
+            background-color: lightyellow;
+          }
+          75% {
+            background-color: darkorange;
+          }
+          100% {
+            background-color: red;
+          }
+        }
+
+        @keyframes jack1 {
+          0% {
+            transform: scale(1);
+          }
+          25% {
+            transform: scale(1.5);
+          }
+          50% {
+            transform: scale(2);
+          }
+          75% {
+            transform: scale(2.5);
+          }
+          100% {
+            transform: scale(3);
+          }
+        }
+      }
+
+      @media screen and (min-width: 1120px) and (max-width: 1200px) {
+        /* Jingyu */
+        body {
+          background-color: green;
         }
         #div13 {
-                display: block;
-                position: absolute;
-                width: 300px;
-                height: 300px;
-                background-color: black;
-                top: 45%;
-                left: 600px;
-                z-index: 0;
-                animation: jyu_black 1.5s infinite;
-            }
-
-             #div14 {
-                display: block;
-                position: absolute;
-                width: 200px;
-                height: 200px;
-                background-color: white;
-                top: 30%;
-                left: 200px;
-                z-index: 0;
-                animation: jyu_white 1.5s infinite;
-            }
-
-                @keyframes jyu_black{
-                  100% {transform:rotate(0deg);transform: translateY(10px, 0px);}
-                  90% {transform:rotate(36deg);}
-                  80% {transform:rotate(72deg);}
-                  70% {transform:rotate(108deg);}
-                  60% {transform:rotate(144deg);}
-                  50% {transform:rotate(180deg);border-radius: 0 0 0 0;}
-                  40% {transform:rotate(216deg);}
-                  30% {transform:rotate(252deg);}
-                  20% {transform:rotate(288deg);}
-                  10% {transform:rotate(334deg);}
-                  0% {transform:rotate(360deg);transform: translateY(200px);transform: translateX(200px);border-radius: 50% 50% 50% 50%;}
-              }
-
-              @keyframes jyu_white{
-                  100% {transform:rotate(0deg);transform: translateX(10px, 0px);}
-                  90% {transform:rotate(36deg);transform: translateX(10px, 0px);}
-                  80% {transform:rotate(72deg);}
-                  70% {transform:rotate(108deg);}
-                  60% {transform:rotate(144deg);}
-                  50% {transform:rotate(180deg);}
-                  40% {transform:rotate(216deg);transform: translateX(10px, 0px);}
-                  30% {transform:rotate(252deg);}
-                  20% {transform:rotate(288deg);}
-                  10% {transform:rotate(334deg);}
-                  0% {transform:rotate(360deg);transform: translateX(200px);}
-              }
-            
-
+          display: block;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: black;
+          top: 45%;
+          left: 600px;
+          z-index: 0;
+          animation: jyu_black 1.5s infinite;
         }
 
-        @media screen and (min-width: 1040px) and (max-width: 1120px) {
-            /* Samaaya */
-
-            body{
-                background-color: orange;
-                animation: shift 2s infinite;
-                }
-
-             #div11 {
-                display: block;
-                position: absolute;
-                width: 300px;
-                height: 300px;
-                background-color: black;
-                top: 45%;
-                left: 600px;
-                z-index: 0;
-                animation: flip 2s infinite;
-            }
-
-             #div12 {
-                display: block;
-                position: absolute;
-                width: 200px;
-                height: 200px;
-                background-color: white;
-                top: 30%;
-                left: 200px;
-                z-index: 0;
-                animation: flip 2s infinite;
-            }
-
-                @keyframes flip{
-                  0% {transform:rotate(0deg);}
-                  10% {transform:rotate(36deg);}
-                  20% {transform:rotate(72deg);}
-                  30% {transform:rotate(108deg);}
-                  40% {transform:rotate(144deg);}
-                  50% {transform:rotate(180deg);}
-                  60% {transform:rotate(216deg);}
-                  70% {transform:rotate(252deg);}
-                  80% {transform:rotate(288deg);}
-                  90% {transform:rotate(334deg);}
-                  100% {transform:rotate(360deg);}
-}
-                @keyframes shift{
-                   0% {
-                    background-color: orange;
-                }
-
-                10%{
-                    background-color: coral;
-                }
-
-                20%{
-                   background-color: hotpink;
-                }
-                30%{
-                    background-color: orange;
-                }
-                40%{
-                    background-color: coral;
-                }
-
-                50%{
-                    background-color: hotpink;
-                }
-
-                60%{
-                    background-color: orange;
-                }
-
-                70%{
-                    background-color: coral;
-                }
-
-                80%{
-                    background-color: hotpink;
-                }
-                90%{
-                    background-color: orange;
-                }
-                100%{
-                    background-color: coral;
-                }
-                
-                }
-
-    }
-        
-        @media screen and (min-width: 960px) and (max-width: 1040px) {
-            /* Carrie */
-            * {
-                overflow: hidden;
-            }
-
-            body {
-                background-color: white;
-                transition:  background-color 10s;
-                animation: backgroundAnimation 3s ease-in-out forwards;
-            }
-
-            @keyframes backgroundAnimation {
-                0% {
-                    background-color: #B6F0CF;
-                }
-
-                100% {
-                    background-image: linear-gradient(to right, white, darkgray, black);
-                }
-            }
-
-            #div9 {
-                display: inline-block;
-                margin: -10px;
-                position: absolute;
-                width: 300px;
-                height: 960px;
-                background-color: darkgray;
-                transform: translateY(690px);
-                animation: rect 5s ease-in forwards;
-                z-index: 0;
-            }
-
-            #div10 {
-                display: inline-block;
-                margin: -10px;
-                position: absolute;
-                width: 5px;
-                height: 900px;
-                background-color: white;
-                transform: translate(800px,450px);
-                animation: rect2 5s ease-in forwards;
-                z-index: 2;
-            }
-    
-            #div7 {
-                display: block;
-                position: absolute;
-                top: 25%;
-                left: 55%;
-                padding: 5%;
-                width: 40vw;
-                height: 40vw;
-                background-color: #5BAF;
-                border-radius: 50%;
-                animation: cir1 3s ease-in forwards;
-                z-index: 1;
-            }
-
-            #div8 {
-                display: block;
-                position: absolute;
-                top: 25%;
-                left: 5%;
-                padding: 5%;
-                width: 40vw;
-                height: 40vw;
-                background-color: #B6F0CF;
-                border-radius: 50%; 
-                animation: cir2 3s ease-in forwards;
-                z-index: 1;
-            }
-
-            @keyframes cir1 {
-                0% { 
-                    width: 40vw;
-                    height: 40vw;
-                    background-color: #5BAF;
-                }
-                50% { 
-                    width: 10vw;
-                    height: 10vw;
-                    background-color: white;
-                    transform: translate(30px, 25px);
-                }
-                100% { 
-                    width: 1000vw;
-                    height: 1000px;
-                    background-color: black;
-                }   
-            }
-
-            @keyframes cir2 {
-                0% { 
-                    width: 40vw;
-                    height: 40vw;
-                    background-color: #B6F0CF;
-                    border-radius: 50%;
-                }
-                100% { 
-                    transform: scale(0.5);
-                    background-color: black;
-                    border-radius: 90%;
-                }   
-            }
-
-            @keyframes rect {
-                50% { 
-                    transform: translateY(-680px);
-                }
-                100% { 
-                    transform: translateY(0px);
-                }   
-            }
-
-            @keyframes rect2 {
-                0% { 
-                    transform: translate(800px,0px);
-                    opacity: 0%;
-                }
-                100% { 
-                    transform: translate(800px,450px);
-                    opacity: 100%;
-                }   
-            }
-
+        #div14 {
+          display: block;
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          background-color: white;
+          top: 30%;
+          left: 200px;
+          z-index: 0;
+          animation: jyu_white 1.5s infinite;
         }
 
-        @media screen and (min-width: 880px) and (max-width: 960px) {
-            /* Justin */
-
-            body {
-            background-color: #B6F0CF;
-            transition: background-color 2s;
-            animation: bgAnim 5 infinite ease-in-out;
-            }
-
-            @keyframes bgAnim {
-                0%{
-                    background-color: #B6F0CF;
-                }
-                
-                100% {
-                    background-color: #FFF;
-                }
-            }
-            
-
-            #div5{
-                display: block;
-                position: absolute;
-                top: 25%;
-                right: 0%;
-                padding: 5%;
-                width: 40vw;
-                height: 40vw;
-                background-color: #000;
-                border-radius: 50%;
-                animation: circleAnim 3s infinite reverse ease-in-out;
-            }
-
-            #div6{
-                display: block;
-                position: absolute;
-                top: 25%;
-                left: 0%;
-                padding: 5%;
-                width: 40vw;
-                height: 40vw;
-                background-color: #000;
-                border-radius: 50%; 
-                animation: circleAnim2 3s  infinite ease-in-out;
-            }
-
-             @keyframes circleAnim {
-                0%{
-                    background-color: #B6F0CF;
-                }
-            50% {
-                    background-color: #5BAF;
-            }
-                100% {
-                    background-color: #B6F0CF;
-                }
-            }
+        @keyframes jyu_black {
+          100% {
+            transform: rotate(0deg);
+            transform: translateY(10px, 0px);
+          }
+          90% {
+            transform: rotate(36deg);
+          }
+          80% {
+            transform: rotate(72deg);
+          }
+          70% {
+            transform: rotate(108deg);
+          }
+          60% {
+            transform: rotate(144deg);
+          }
+          50% {
+            transform: rotate(180deg);
+            border-radius: 0 0 0 0;
+          }
+          40% {
+            transform: rotate(216deg);
+          }
+          30% {
+            transform: rotate(252deg);
+          }
+          20% {
+            transform: rotate(288deg);
+          }
+          10% {
+            transform: rotate(334deg);
+          }
+          0% {
+            transform: rotate(360deg);
+            transform: translateY(200px);
+            transform: translateX(200px);
+            border-radius: 50% 50% 50% 50%;
+          }
         }
 
-        @keyframes circleAnim2 {
-                0%{
-                    background-color: #5BAF;
-                }
-            50% {
-                    background-color: #B6F0CF;
-            }
-                100% {
-                    background-color: #5BAF;
-                }
-            }
-
-        
-        @media screen and (min-width: 800px) and (max-width: 880px) {
-            /* Serena */
-            body {
-                background-color: #075564;
-                transition: background-color 2s;
-                animation: bgAnimation 3s infinite alternate ease-in-out;
-            }
-            
-            #div4 {
-                display: block;
-                position: absolute;
-                background-image: linear-gradient(45deg, #B6F213, #112ECE);
-                width: 40vw;
-                height:40vw;
-                top:calc(50% - 20vw);
-                left: calc(50% - 20vw);
-                animation: animation 5s infinite alternate ease-in-out;
-                transition: background-color 1.5s, width 1.5s, height 1.5s, opacity 2s, border-radius 2s;
-            }
-            
-            @keyframes animation {
-                0% {
-                    transform: scale(80%,80%);
-                    opacity: .6;
-                     border-radius: 50%;
-                    filter: blur(17px);
-
-
-                }
-   
-                100% {
-                    opacity: 1;
-                    border-radius: 100%;
-                    transform: scale(100%,100%);
-                    filter: blur(0);
-                }
-            }
-            
-            @keyframes bgAnimation {
-                0%{
-                    background-color: #040424;
-                }
-                
-                100% {
-                    background-color: #B6F0CF;
-                }
-            }
+        @keyframes jyu_white {
+          100% {
+            transform: rotate(0deg);
+            transform: translateX(10px, 0px);
+          }
+          90% {
+            transform: rotate(36deg);
+            transform: translateX(10px, 0px);
+          }
+          80% {
+            transform: rotate(72deg);
+          }
+          70% {
+            transform: rotate(108deg);
+          }
+          60% {
+            transform: rotate(144deg);
+          }
+          50% {
+            transform: rotate(180deg);
+          }
+          40% {
+            transform: rotate(216deg);
+            transform: translateX(10px, 0px);
+          }
+          30% {
+            transform: rotate(252deg);
+          }
+          20% {
+            transform: rotate(288deg);
+          }
+          10% {
+            transform: rotate(334deg);
+          }
+          0% {
+            transform: rotate(360deg);
+            transform: translateX(200px);
+          }
         }
-        
-        @media screen and (min-width: 720px) and (max-width: 800px) {
-            /* Colleen */
-            #div2{display: block;
-                position: fixed;
-                width: 5vw;
-                height: 5vw;
-                top: 30%;
-                left: 30%;
-                padding: 15%;
-                border-radius: 50%;
-                background-color: #ff59bf;
-                -webkit-mask:linear-gradient(to bottom, #ff59bf, transparent );
-                animation: A650 2s infinite alternate ease-in-out;
-                animation-iteration-count: infinite;
-                transform: rotate(0);
-            }
-                body{
-                    background-color:black;
-                    transition: 0.6s all;
-                }
-                @keyframes A650 {
-                from {background-color: #A00000;
-                    width: 12vw;
-                    height: 12vw;
-                    top: 25%;
-                    left: 25%;
-                    padding: 20%;
-                    transform: rotate(-180deg);
-                    transition-timing-function: ease-out;
-                }
-                    
-                to {background-color: #ff59bf;
-                    width: 15vw;
-                    height: 15vw;
-                    top: 30%;
-                    left: 30%;
-                    padding: 15%;
-                    transform: scale(2);
-                    transition-timing-function: ease-out;}
-                    
-            }
-        }
-        
-        @media screen and (min-width: 640px) and (max-width: 720px) {
-            /* Angela */
-            #div2{display: block;
-                position: fixed;
-                width: 5vw;
-                height: 5vw;
-                top: 30%;
-                left: 30%;
-                padding: 15%;
-                border-radius: 50%;
-                background-color: #A00000;
-                -webkit-mask:linear-gradient(to bottom, #A00000, transparent );
-                animation: A640 5s 1;
-                transform: rotate(-180deg);
-            }
-            @keyframes A640 {
-                from {background-color: #000;
-                    width: 10vw;
-                    height: 10vw;
-                    top: 25%;
-                    left: 25%;
-                    padding: 20%;
-                    transform: rotate(0deg);}
-                to {background-color: #A00000;
-                    width: 5vw;
-                    height: 5vw;
-                    top: 30%;
-                    left: 30%;
-                    padding: 15%;
-                    transform: rotate(-180deg);}
-            }
+      }
 
+      @media screen and (min-width: 1040px) and (max-width: 1120px) {
+        /* Samaaya */
+
+        body {
+          background-color: orange;
+          animation: shift 2s infinite;
         }
-        
-        @media screen and (min-width: 320px) and (max-width: 640px) {
-            /* Minkyoung */
-            body {
-                background-color: #FFF;
-            }
-            [id^=div] {
-                display: none;
-            }
-            #div1 {
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 10vw;
-                height: 10vw;
-                padding: 20%;
-                background-color: #000;
-                border-radius: 50%;
-                transform: translateX(-50%) translateY(-50%);
-            }
+
+        #div11 {
+          display: block;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: black;
+          top: 45%;
+          left: 600px;
+          z-index: 0;
+          animation: flip 2s infinite;
         }
+
+        #div12 {
+          display: block;
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          background-color: white;
+          top: 30%;
+          left: 200px;
+          z-index: 0;
+          animation: flip 2s infinite;
+        }
+
+        @keyframes flip {
+          0% {
+            transform: rotate(0deg);
+          }
+          10% {
+            transform: rotate(36deg);
+          }
+          20% {
+            transform: rotate(72deg);
+          }
+          30% {
+            transform: rotate(108deg);
+          }
+          40% {
+            transform: rotate(144deg);
+          }
+          50% {
+            transform: rotate(180deg);
+          }
+          60% {
+            transform: rotate(216deg);
+          }
+          70% {
+            transform: rotate(252deg);
+          }
+          80% {
+            transform: rotate(288deg);
+          }
+          90% {
+            transform: rotate(334deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes shift {
+          0% {
+            background-color: orange;
+          }
+
+          10% {
+            background-color: coral;
+          }
+
+          20% {
+            background-color: hotpink;
+          }
+          30% {
+            background-color: orange;
+          }
+          40% {
+            background-color: coral;
+          }
+
+          50% {
+            background-color: hotpink;
+          }
+
+          60% {
+            background-color: orange;
+          }
+
+          70% {
+            background-color: coral;
+          }
+
+          80% {
+            background-color: hotpink;
+          }
+          90% {
+            background-color: orange;
+          }
+          100% {
+            background-color: coral;
+          }
+        }
+      }
+
+      @media screen and (min-width: 960px) and (max-width: 1040px) {
+        /* Carrie */
+        * {
+          overflow: hidden;
+        }
+
+        body {
+          background-color: white;
+          transition: background-color 10s;
+          animation: backgroundAnimation 3s ease-in-out forwards;
+        }
+
+        @keyframes backgroundAnimation {
+          0% {
+            background-color: #b6f0cf;
+          }
+
+          100% {
+            background-image: linear-gradient(to right, white, darkgray, black);
+          }
+        }
+
+        #div9 {
+          display: inline-block;
+          margin: -10px;
+          position: absolute;
+          width: 300px;
+          height: 960px;
+          background-color: darkgray;
+          transform: translateY(690px);
+          animation: rect 5s ease-in forwards;
+          z-index: 0;
+        }
+
+        #div10 {
+          display: inline-block;
+          margin: -10px;
+          position: absolute;
+          width: 5px;
+          height: 900px;
+          background-color: white;
+          transform: translate(800px, 450px);
+          animation: rect2 5s ease-in forwards;
+          z-index: 2;
+        }
+
+        #div7 {
+          display: block;
+          position: absolute;
+          top: 25%;
+          left: 55%;
+          padding: 5%;
+          width: 40vw;
+          height: 40vw;
+          background-color: #5baf;
+          border-radius: 50%;
+          animation: cir1 3s ease-in forwards;
+          z-index: 1;
+        }
+
+        #div8 {
+          display: block;
+          position: absolute;
+          top: 25%;
+          left: 5%;
+          padding: 5%;
+          width: 40vw;
+          height: 40vw;
+          background-color: #b6f0cf;
+          border-radius: 50%;
+          animation: cir2 3s ease-in forwards;
+          z-index: 1;
+        }
+
+        @keyframes cir1 {
+          0% {
+            width: 40vw;
+            height: 40vw;
+            background-color: #5baf;
+          }
+          50% {
+            width: 10vw;
+            height: 10vw;
+            background-color: white;
+            transform: translate(30px, 25px);
+          }
+          100% {
+            width: 1000vw;
+            height: 1000px;
+            background-color: black;
+          }
+        }
+
+        @keyframes cir2 {
+          0% {
+            width: 40vw;
+            height: 40vw;
+            background-color: #b6f0cf;
+            border-radius: 50%;
+          }
+          100% {
+            transform: scale(0.5);
+            background-color: black;
+            border-radius: 90%;
+          }
+        }
+
+        @keyframes rect {
+          50% {
+            transform: translateY(-680px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+
+        @keyframes rect2 {
+          0% {
+            transform: translate(800px, 0px);
+            opacity: 0%;
+          }
+          100% {
+            transform: translate(800px, 450px);
+            opacity: 100%;
+          }
+        }
+      }
+
+      @media screen and (min-width: 880px) and (max-width: 960px) {
+        /* Justin */
+
+        body {
+          background-color: #b6f0cf;
+          transition: background-color 2s;
+          animation: bgAnim 5 infinite ease-in-out;
+        }
+
+        @keyframes bgAnim {
+          0% {
+            background-color: #b6f0cf;
+          }
+
+          100% {
+            background-color: #fff;
+          }
+        }
+
+        #div5 {
+          display: block;
+          position: absolute;
+          top: 25%;
+          right: 0%;
+          padding: 5%;
+          width: 40vw;
+          height: 40vw;
+          background-color: #000;
+          border-radius: 50%;
+          animation: circleAnim 3s infinite reverse ease-in-out;
+        }
+
+        #div6 {
+          display: block;
+          position: absolute;
+          top: 25%;
+          left: 0%;
+          padding: 5%;
+          width: 40vw;
+          height: 40vw;
+          background-color: #000;
+          border-radius: 50%;
+          animation: circleAnim2 3s infinite ease-in-out;
+        }
+
+        @keyframes circleAnim {
+          0% {
+            background-color: #b6f0cf;
+          }
+          50% {
+            background-color: #5baf;
+          }
+          100% {
+            background-color: #b6f0cf;
+          }
+        }
+      }
+
+      @keyframes circleAnim2 {
+        0% {
+          background-color: #5baf;
+        }
+        50% {
+          background-color: #b6f0cf;
+        }
+        100% {
+          background-color: #5baf;
+        }
+      }
+
+      @media screen and (min-width: 800px) and (max-width: 880px) {
+        /* Serena */
+        body {
+          background-color: #075564;
+          transition: background-color 2s;
+          animation: bgAnimation 3s infinite alternate ease-in-out;
+        }
+
+        #div4 {
+          display: block;
+          position: absolute;
+          background-image: linear-gradient(45deg, #b6f213, #112ece);
+          width: 40vw;
+          height: 40vw;
+          top: calc(50% - 20vw);
+          left: calc(50% - 20vw);
+          animation: animation 5s infinite alternate ease-in-out;
+          transition: background-color 1.5s, width 1.5s, height 1.5s, opacity 2s,
+            border-radius 2s;
+        }
+
+        @keyframes animation {
+          0% {
+            transform: scale(80%, 80%);
+            opacity: 0.6;
+            border-radius: 50%;
+            filter: blur(17px);
+          }
+
+          100% {
+            opacity: 1;
+            border-radius: 100%;
+            transform: scale(100%, 100%);
+            filter: blur(0);
+          }
+        }
+
+        @keyframes bgAnimation {
+          0% {
+            background-color: #040424;
+          }
+
+          100% {
+            background-color: #b6f0cf;
+          }
+        }
+      }
+
+      @media screen and (min-width: 720px) and (max-width: 800px) {
+        /* Colleen */
+        #div2 {
+          display: block;
+          position: fixed;
+          width: 5vw;
+          height: 5vw;
+          top: 30%;
+          left: 30%;
+          padding: 15%;
+          border-radius: 50%;
+          background-color: #ff59bf;
+          -webkit-mask: linear-gradient(to bottom, #ff59bf, transparent);
+          animation: A650 2s infinite alternate ease-in-out;
+          animation-iteration-count: infinite;
+          transform: rotate(0);
+        }
+        body {
+          background-color: black;
+          transition: 0.6s all;
+        }
+        @keyframes A650 {
+          from {
+            background-color: #a00000;
+            width: 12vw;
+            height: 12vw;
+            top: 25%;
+            left: 25%;
+            padding: 20%;
+            transform: rotate(-180deg);
+            transition-timing-function: ease-out;
+          }
+
+          to {
+            background-color: #ff59bf;
+            width: 15vw;
+            height: 15vw;
+            top: 30%;
+            left: 30%;
+            padding: 15%;
+            transform: scale(2);
+            transition-timing-function: ease-out;
+          }
+        }
+      }
+
+      @media screen and (min-width: 640px) and (max-width: 720px) {
+        /* Angela */
+        #div2 {
+          display: block;
+          position: fixed;
+          width: 5vw;
+          height: 5vw;
+          top: 30%;
+          left: 30%;
+          padding: 15%;
+          border-radius: 50%;
+          background-color: #a00000;
+          -webkit-mask: linear-gradient(to bottom, #a00000, transparent);
+          animation: A640 5s 1;
+          transform: rotate(-180deg);
+        }
+        @keyframes A640 {
+          from {
+            background-color: #000;
+            width: 10vw;
+            height: 10vw;
+            top: 25%;
+            left: 25%;
+            padding: 20%;
+            transform: rotate(0deg);
+          }
+          to {
+            background-color: #a00000;
+            width: 5vw;
+            height: 5vw;
+            top: 30%;
+            left: 30%;
+            padding: 15%;
+            transform: rotate(-180deg);
+          }
+        }
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        /* Minkyoung */
+        body {
+          background-color: #fff;
+        }
+        [id^="div"] {
+          display: none;
+        }
+        #div1 {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 10vw;
+          height: 10vw;
+          padding: 20%;
+          background-color: #000;
+          border-radius: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="div1"></div>
     <div id="div2"></div>
     <div id="div3"></div>
@@ -741,6 +1208,5 @@
     <div id="div18"></div>
     <div id="div19"></div>
     <div id="div20"></div>
-</body>
-
+  </body>
 </html>
