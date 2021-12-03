@@ -68,7 +68,7 @@
                   from { transform: translate3d(0, 0, 0);     }
                   to   { transform: translate3d(200px, 0, 0); }
                 }
-
+      }
       @media screen and (min-width: 1520px) and (max-width: 1600px) {
         /* Harshal */
          body {
@@ -958,7 +958,7 @@
         body {
           background-color: white;
           transition: background-color 10s;
-          animation: backgroundAnimation 3s ease-in-out forwards;
+          animation: backgroundAnimation 3s ease-in alternate infinite;
         }
 
         @keyframes backgroundAnimation {
@@ -966,6 +966,9 @@
             background-color: #b6f0cf;
           }
 
+          70% {
+            background-image: linear-gradient(to right, white, darkgray, black);
+          }
           100% {
             background-image: linear-gradient(to right, white, darkgray, black);
           }
@@ -979,7 +982,7 @@
           height: 960px;
           background-color: darkgray;
           transform: translateY(690px);
-          animation: rect 5s ease-in forwards;
+          animation: rect 3s ease-in alternate infinite;
           z-index: 0;
         }
 
@@ -991,7 +994,7 @@
           height: 900px;
           background-color: white;
           transform: translate(800px, 450px);
-          animation: rect2 5s ease-in forwards;
+          animation: rect2 3s ease-in alternate infinite;
           z-index: 2;
         }
 
@@ -1005,7 +1008,7 @@
           height: 40vw;
           background-color: #5baf;
           border-radius: 50%;
-          animation: cir1 3s ease-in forwards;
+          animation: cir1 3s ease-in alternate infinite;
           z-index: 1;
         }
 
@@ -1019,7 +1022,7 @@
           height: 40vw;
           background-color: #b6f0cf;
           border-radius: 50%;
-          animation: cir2 3s ease-in forwards;
+          animation: cir2 3s ease-in alternate infinite;
           z-index: 1;
         }
 
@@ -1035,6 +1038,11 @@
             background-color: white;
             transform: translate(30px, 25px);
           }
+          70% {
+            width: 1000vw;
+            height: 1000px;
+            background-color: black;
+          }
           100% {
             width: 1000vw;
             height: 1000px;
@@ -1049,6 +1057,11 @@
             background-color: #b6f0cf;
             border-radius: 50%;
           }
+          70% {
+            transform: scale(0.5);
+            background-color: black;
+            border-radius: 90%;
+          }
           100% {
             transform: scale(0.5);
             background-color: black;
@@ -1060,6 +1073,9 @@
           50% {
             transform: translateY(-680px);
           }
+          70% {
+            transform: translateY(0px);
+          }
           100% {
             transform: translateY(0px);
           }
@@ -1069,6 +1085,10 @@
           0% {
             transform: translate(800px, 0px);
             opacity: 0%;
+          }
+          70% {
+            transform: translate(800px, 450px);
+            opacity: 100%;
           }
           100% {
             transform: translate(800px, 450px);
